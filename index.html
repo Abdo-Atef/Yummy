@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Abdo Atef" />
+    <meta name="description" content="Explore a world of delicious flavors and culinary delights on our food website. Discover mouthwatering recipes, restaurant reviews, cooking tips, and more. Satisfy your cravings and indulge in the art of gastronomy with us.">
+    <meta
+      name="keywords"
+      content="food, egyption food, countries food, recipes, culinary, restaurant reviews, cooking tips, gastronomy, delicious flavors, cuisine"
+    />
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&amp;family=Noto+Sans+Syloti+Nagri&amp;family=Source+Sans+Pro:wght@300;400;600;700;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <main class="container my-5 pt-5">
+      <section class="SectionsContainer">
+        <div class="searchBox mb-5 d-none">
+          <input type="text" id="searchByNameInput" placeholder="Search By Name">
+          <input type="text" id="searchByFL" placeholder="Search By First Letter">
+        </div>
+        <div class="cardsContainer row g-4 d-flex row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+        </div>
+      </section>
+        
+      <section class="mealsContainer d-none">
+        <i class="btn-close btn-close-white d-block ms-auto mb-3 fs-5" type="closeBtn" style="cursor: pointer"></i>
+        <div class="mealDetailsContainer row g-4 d-flex"></div>
+      </section>
+    </main>
+    <aside class="sideBar bg-white text-black position-fixed top-0 start-0 w-100 px-sm-0 px-2">
+      <div class="container d-flex align-items-center">
+        <a href="" class="py-1 d-flex align-items-center gap-2">
+          <img src="imgs/logo.png" alt="Yummy Logo" style="width: 40px;" >
+          <h1 class="fs-4">Yummy</h1>
+        </a>
+        <div class="d-flex justify-content-end p-1 w-100">
+          <ul class="navLinks mt-3 px-4 d-flex align-items-center gap-4"> 
+            <li class="active">Home</li>
+            <li>Search</li>
+            <li>Categories</li>
+            <li>Area</li>
+            <li>Ingredients</li>
+          </ul>
+          <div class="toggleNavBar justify-content-center align-items-center">
+            <i class="fa-solid fa-bars fs-3 d-block cursor-pointer" id="openBtn"></i>
+            <i class="fa-solid fa-x d-none fs-3 cursor-pointer" id="closeBtn"></i>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <div id="loadingSpinner" class="d-none d-flex justify-content-center align-items-center position-fixed h-100 w-100 start-0 top-0 bg-black">
+      <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
