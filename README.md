@@ -1,2 +1,2 @@
 # Yummy
-## Application on HTML, CSS, Bootstrap, JavaScript, API Integration
+## Application on HTML, CSS, Bootstrap, JavaScript, JQuery, API Integration
